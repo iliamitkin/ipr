@@ -1,0 +1,8 @@
+<script setup lang="ts">
+import ProductCard from '@/components/ProductCard/index.vue'
+import { products } from '@/config/products'
+import { useCatalog } from '@/hooks/useCatalog'
+const { categories, activeCategory, search, sort, filtered, reset } = useCatalog()
+</script>
+
+<template><section class="catalog-page wrap"><div class="eyebrow">КОЛЛЕКЦИЯ ЛИСТВЫ</div><h1>Найдите своего <em>зелёного</em><br/>друга</h1><p class="catalog-intro">Растения для дома, балкона и тех, кто пока только присматривается.</p><div class="catalog-controls"><label class="search-box"><span>⌕</span><input v-model="search" type="search" placeholder="Поиск по каталогу" aria-label="Поиск по каталогу"/><kbd>⌘ K</kbd></label><label class="sort-box">Сортировка <select v-model="sort"><option value="popular">По популярности</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option></select></label></div><div class="filters"><button v-for="category in categories" :key="category" :class="{ active: activeCategory === category }" @click="activeCategory = category">{{ category }} <span>{{ category === 'Все растения' ? products.length : products.filter(p => p.category === category).length }}</span></button></div><p class="results-count">Найдено товаров: {{ filtered.length }}</p><div v-if="filtered.length" class="product-grid"><ProductCard v-for="product in filtered" :key="product.id" :product="product" /></div><div v-else class="no-results"><span>⌕</span><h2>Ничего не нашлось</h2><p>Попробуйте изменить запрос или выбрать другую категорию.</p><button class="inline-link" @click="reset">Сбросить фильтры ↗</button></div></section></template>

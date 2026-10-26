@@ -1,0 +1,96 @@
+/* Site layout */
+.wrap{width:min(1200px,calc(100% - 64px));margin:0 auto}
+
+.announcement{height:34px;background:#26382d;color:#f8f7f3;text-align:center;font-size:11px;letter-spacing:.08em;display:flex;align-items:center;justify-content:center;gap:14px}
+
+.announcement span{color:#d6a775}
+
+.header{height:82px;border-bottom:1px solid #e7e5de;background:#f8f7f3}
+
+.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+
+.brand{display:flex;align-items:center;gap:9px;font-family:'Playfair Display',serif;font-size:23px;line-height:1}
+
+.brand small{display:block;font:8px 'DM Sans',sans-serif;letter-spacing:.18em;margin-top:5px}
+
+.brand-mark{display:grid;place-items:center;width:35px;height:35px;background:#3b513c;color:#f8f7f3;border-radius:50%;font-size:24px;font-style:italic}
+
+.header nav{display:flex;gap:36px;font-size:13px;color:#4e594f}
+
+.header nav a:hover,.inline-link:hover{color:#a46a3b}
+
+.hero{height:590px;display:grid;grid-template-columns:47% 53%;position:relative;padding-top:57px;padding-bottom:50px}
+
+.hero-copy{padding:47px 40px 30px 0}
+
+.hero h1,.catalog-page h1,.cart-page h1{font:500 62px/1.07 'Playfair Display',serif;letter-spacing:-.035em;margin:20px 0}
+
+.hero h1 em,h2 em,.catalog-page h1 em,.cart-page h1 em{color:#81916e;font-weight:500}
+
+.hero-copy>p{font-size:14px;line-height:1.8;color:#778076;max-width:365px;margin:0 0 27px}
+
+.hero-note{display:flex;align-items:center;gap:12px;margin-top:45px;font-size:10px;line-height:1.6;color:#8b9188;letter-spacing:.02em}
+
+.hero-art{position:relative;height:480px;overflow:hidden}
+
+.hero-art>img{width:100%;height:100%;object-fit:cover;object-position:center 52%}
+
+.hero-side{position:absolute;right:-36px;top:51%;writing-mode:vertical-rl;font-size:8px;letter-spacing:.17em;color:#95998f}
+
+.benefits{background:#efefe8;border-top:1px solid #e7e7df;border-bottom:1px solid #e7e7df}
+
+.benefits-grid{min-height:115px;display:grid;grid-template-columns:repeat(3,1fr);align-items:center}
+
+.benefits-grid>div{display:grid;grid-template-columns:30px 1fr;grid-template-rows:auto auto;align-items:center}
+
+.benefits-grid>div+div{border-left:1px solid #d9dcd2;padding-left:36px}
+
+.benefits-grid>div>span{grid-row:span 2;font:italic 15px 'Playfair Display',serif;color:#92a080}
+
+.benefits-grid b{font-size:12px;font-weight:500}
+
+.benefits-grid small{font-size:10px;color:#898f84;margin-top:5px}
+
+.section{padding-top:92px;padding-bottom:105px}
+
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:31px}
+
+.section-heading h2,.care-inner h2,.newsletter h2{font:500 39px/1.17 'Playfair Display',serif;margin:12px 0 0;letter-spacing:-.025em}
+
+.care-banner{background:#e9ebe3}
+
+.care-inner{padding-top:75px;padding-bottom:75px;display:grid;grid-template-columns:1fr 45%;gap:75px;align-items:center}
+
+.care-inner h2{font-size:42px;margin:16px 0}
+
+.care-inner p,.newsletter p{max-width:400px;color:#7d847b;font-size:13px;line-height:1.8;margin:0 0 23px}
+
+.care-visual{height:290px;position:relative;overflow:hidden}
+
+.care-visual img{width:100%;height:100%;object-fit:cover}
+
+.care-visual>span{position:absolute;left:20px;bottom:18px;color:white;font:500 25px/1.05 'Playfair Display',serif;letter-spacing:.04em;text-shadow:0 1px 8px #333}
+
+.care-visual em{color:#d8dfbe}
+
+.newsletter{min-height:220px;display:flex;align-items:center;gap:26px}
+
+.newsletter-flower{font-size:42px;color:#839171}
+
+.newsletter h2{font-size:30px;margin:9px 0}
+
+.newsletter p{font-size:11px;margin:0}
+
+.newsletter form{display:flex;margin-left:auto;border-bottom:1px solid #adb2a5;width:310px}
+
+.newsletter input{border:0;background:none;outline:0;padding:13px 0;font-size:11px;flex:1}
+
+.newsletter form button{border:0;background:none;color:#425443;font-size:19px;cursor:pointer}
+
+.footer{background:#26382d;color:#f8f7f3}
+
+.footer-inner{height:100px;display:flex;align-items:center;justify-content:space-between}
+
+.footer .brand-mark{background:#e4e4d7;color:#314637}
+
+.footer p,.footer-inner>span{font-size:10px;color:#c3c9bf}
